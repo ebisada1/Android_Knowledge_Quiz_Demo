@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="bisada.emad.justjava.MainActivity" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/president" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="1. The first Prisident for the United States was"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="text"
+            android:hint="Answer" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/map"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="2. Which of those states have a coastal shoreline on the Atlantic ocean?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/answer2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Virginia"
+            android:textSize="16sp"
+            android:onClick="answer2aClicked" />
+
+        <CheckBox
+            android:id="@+id/answer2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Texas"
+            android:textSize="16sp"
+            android:onClick="answer2bClicked" />
+
+        <CheckBox
+            android:id="@+id/answer2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="New Jersey"
+            android:textSize="16sp"
+            android:onClick="answer2cClicked" />
+
+        <CheckBox
+            android:id="@+id/answer2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Alabama"
+            android:textSize="16sp"
+            android:onClick="answer2dClicked" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rain" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="3. Which state gets more rain througout the year?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/answer3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Arizona"
+            android:textSize="16sp"
+            android:onClick="answer3aClicked" />
+
+        <RadioButton
+            android:id="@+id/answer3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Washington"
+            android:textSize="16sp"
+            android:onClick="answer3bClicked" />
+
+        <RadioButton
+            android:id="@+id/answer3c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Nevada"
+            android:textSize="16sp"
+            android:onClick="answer3cClicked" />
+
+        <RadioButton
+            android:id="@+id/answer3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="New Mexico"
+            android:textSize="16sp"
+            android:onClick="answer3dClicked" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/decleration_of_independence" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="4. At what year was the declaration of independance signed?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Year"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/missisippi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="5. Through which of the follwing states does the Missisippi river go through?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/answer5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Missouri"
+            android:textSize="16sp"
+            android:onClick="answer5aClicked" />
+
+        <CheckBox
+            android:id="@+id/answer5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="California"
+            android:textSize="16sp"
+            android:onClick="answer5bClicked" />
+
+        <CheckBox
+            android:id="@+id/answer5c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Missisippi"
+            android:textSize="16sp"
+            android:onClick="answer5cClicked" />
+
+        <CheckBox
+            android:id="@+id/answer5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Utah"
+            android:textSize="16sp"
+            android:onClick="answer5dClicked" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="Score"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:onClick="calculateMyScore" />
+
+    </LinearLayout>
+
+</ScrollView>
